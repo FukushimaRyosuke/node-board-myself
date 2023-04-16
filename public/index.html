@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>掲示板サイト</title>
+  </head>
+  <body>
+    <!-- headerは飾りです。 -->
+    <header>
+      <h1>掲示板サイト</h1>
+      <nav>
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">新規投稿</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main  class="board">
+        <section class="board-section" id="board">
+        </section>
+        <section class="post-section">
+            <form>
+                <label for="title">タイトル</label>
+                <input type="text" id="title" name="title">
+                <label for="message">本文</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="投稿する" id="submit">
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+      <p>© 2023 掲示板サイト</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
